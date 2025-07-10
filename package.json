@@ -1,0 +1,15 @@
+{
+  "name": "show-do-milhao",
+  "version": "1.0.0",
+  "description": "Jogo Show do Milhão via terminal",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
