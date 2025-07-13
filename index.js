@@ -92,7 +92,7 @@ const PREMIACAO = [
 
 const ARQUIVO_RANKING = 'ranking.json';
 
-// -FUNÇÕES-DO-JOGO-
+// Funções do jogo.
 
 /**
  * Função para embaralhar um array (algoritmo de Fisher-Yates)
@@ -266,10 +266,10 @@ function processarRodada(nomeJogador, numRodada, pergunta, premiacao, ajudas) {
         if (resposta === 'J' && ajudas.pular > 0) {
             ajudas.pular--;
             console.log("\n>> AJUDA: Você pulou a pergunta! <<\n");
-            // Troca a pergunta por uma nova não utilizada
+            
             const novasPerguntas = PERGUNTAS.filter(p => p.pergunta !== perguntaAtual.pergunta);
             perguntaAtual = embaralharArray(novasPerguntas)[0];
-            continue; // Reinicia o loop da rodada com a nova pergunta
+            continue; 
         }
 
         if (resposta === 'C' && ajudas.cartas > 0) {
@@ -292,7 +292,7 @@ function processarRodada(nomeJogador, numRodada, pergunta, premiacao, ajudas) {
                 }
             }
             perguntaAtual = {...perguntaAtual, opcoes: novasOpcoes};
-            continue; // Reinicia o loop da rodada com as opções reduzidas
+            continue; 
         }
 
         const respostaNum = parseInt(resposta, 10);
@@ -310,11 +310,11 @@ function processarRodada(nomeJogador, numRodada, pergunta, premiacao, ajudas) {
 
 /**
  * Exibe a tela de resultado final do jogo.
- * @param {string} nomeJogador - O nome do jogador.
- * @param {number} rodadaParou - O número da rodada em que o jogo terminou.
- * @param {string} statusFinal - O motivo do término ('acertou', 'errou', 'parou').
- * @param {object} ultimaPergunta - O objeto da última pergunta respondida.
- * @param {number} premioFinal - O valor final do prêmio.
+ * @param {string} nomeJogador -  nome do jogador.
+ * @param {number} rodadaParou -  número da rodada em que o jogo terminou.
+ * @param {string} statusFinal -  motivo do término ('acertou', 'errou', 'parou').
+ * @param {object} ultimaPergunta -  objeto da última pergunta respondida.
+ * @param {number} premioFinal -  valor final do prêmio.
  */
 function mostrarResultadoFinal(nomeJogador, rodadaParou, statusFinal, ultimaPergunta, premioFinal) {
     console.log("\n--- FIM DE JOGO ---");
@@ -327,9 +327,9 @@ function mostrarResultadoFinal(nomeJogador, rodadaParou, statusFinal, ultimaPerg
     console.log("-------------------\n");
 }
 
-/**
- * Pergunta ao jogador se ele deseja jogar novamente.
- */
+
+ //* Pergunta ao jogador se ele deseja jogar novamente.
+ 
 function jogarNovamente() {
     const resposta = readlineSync.question("Deseja jogar novamente? (S/N) ").toUpperCase();
     if (resposta === 'S') {
