@@ -4,7 +4,7 @@ Este é um projeto de um jogo "Show do Milhão" desenvolvido em JavaScript para 
 
 ## Autor
 
-* **Nome Completo:** Gustavo Rodrigues de Oliveira
+* **Gustavo Rodrigues de Oliveira** 
 
 ## Regras do Jogo
 
@@ -70,9 +70,45 @@ Este projeto inclui as seguintes funcionalidades bônus:
 
 ## Créditos e Fontes de Referência
 
-* **Lógica do Jogo:** Baseada no jogo "Show do Milhão" original.
-* **Perguntas:** Conhecimentos gerais, criadas para este projeto (Pesquisas no Google, ChatGPT, e Google Gemini).
-* **Leitura de Input no Terminal:** [readline-sync](https://www.npmjs.com/package/readline-sync) - Biblioteca utilizada para capturar as respostas do jogador de forma síncrona no terminal.
+# Créditos e Fontes de Referência
+
+Este projeto foi desenvolvido utilizando uma combinação de tecnologias de programação e fontes de conhecimento geral para a elaboração das perguntas. A seguir estão detalhadas todas as referências utilizadas.
+
+## Referências Técnicas (Código e Estrutura)
+
+A lógica, a estrutura e a interatividade do jogo foram construídas com base na documentação das seguintes tecnologias:
+
+* **Node.js (Ambiente de Execução)**
+    * **Uso:** Essencial para executar o código JavaScript fora de um navegador e para utilizar módulos nativos como o `fs` (File System), que gerencia o arquivo de ranking.
+    * **Link:** [Documentação Oficial do Node.js](https://nodejs.org/api/)
+
+* **npm (Gerenciador de Pacotes)**
+    * **Uso:** Utilizado para inicializar o projeto, gerenciar dependências (como `readline-sync`) e configurar o script de inicialização `npm start`.
+    * **Link:** [Documentação Oficial do npm](https://docs.npmjs.com/)
+
+* **`readline-sync` (Input do Usuário)**
+    * **Uso:** Biblioteca fundamental que permite ao jogo capturar as respostas do jogador diretamente no terminal de forma síncrona.
+    * **Link:** [Página da biblioteca `readline-sync`](https://www.npmjs.com/package/readline-sync)
+
+* **JavaScript (Linguagem de Programação)**
+    * **Uso:** A linguagem principal na qual toda a lógica do jogo foi implementada. A documentação da MDN foi a principal fonte para consulta de sintaxe e métodos.
+    * **Link:** [MDN Web Docs - Referência de JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+
+## Fontes de Conhecimento (Elaboração e Verificação das Perguntas)
+
+As perguntas do jogo foram criadas com base em conhecimentos gerais. A verificação dos fatos foi realizada consultando fontes de alta confiabilidade, como:
+
+* **Fatos sobre o Brasil (IBGE)**
+    * **Uso:** Para verificar dados geográficos e demográficos do Brasil, como a quantidade de estados.
+    * **Link:** [Portal do IBGE](https://www.ibge.gov.br/)
+
+* **Ciência e Astronomia (NASA)**
+    * **Uso:** Para confirmar informações científicas, como fatos sobre o sistema solar.
+    * **Link:** [Site Oficial da NASA](https://www.nasa.gov/)
+
+* **Conhecimentos Gerais, História e Literatura (Enciclopédias)**
+    * **Uso:** Para validar informações sobre história, arte, literatura e outros conhecimentos gerais.
+    * **Link:** [Encyclopædia Britannica](https://www.britannica.com/)
 
 ## Licença
 
