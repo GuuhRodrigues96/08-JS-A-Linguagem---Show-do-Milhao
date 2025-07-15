@@ -46,11 +46,11 @@ Você precisa ter o [Node.js](https://nodejs.org/) instalado em sua máquina.
 
 1.  **Clone este repositório:**
     ```bash
-    git clone [https://github.com/thorehusfeldt/git-paa-dansk](https://github.com/thorehusfeldt/git-paa-dansk)
+    git clone https://github.com/GuuhRodrigues96/08-JS-A-Linguagem---Show-do-Milhao.git
     ```
 2.  **Navegue até a pasta do projeto:**
     ```bash
-    cd [nome-da-pasta-do-repositorio]
+    cd 08-JS-A-Linguagem---Show-do-Milhao
     ```
 3.  **Instale as dependências:**
     ```bash
@@ -108,7 +108,7 @@ As perguntas do jogo foram criadas com base em conhecimentos gerais. A verifica�
 
 * **Conhecimentos Gerais, História e Literatura (Enciclopédias)**
     * **Uso:** Para validar informações sobre história, arte, literatura e outros conhecimentos gerais.
-    * **Link:** [Encyclopædia Britannica](https://www.britannica.com/)
+    * **Link:** [Enciclopédia Britannica](https://www.britannica.com/)
 
 ## Licença
 
