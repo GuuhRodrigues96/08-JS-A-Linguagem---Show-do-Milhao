@@ -81,7 +81,7 @@ const PERGUNTAS = [
     }
 ];
 
-// -PREMIAÇÃO-
+// Premiação
 const PREMIACAO = [
     { rodada: 1, acertar: 1000, parar: 0, errar: 0 },
     { rodada: 2, acertar: 5000, parar: 1000, errar: 500 },
@@ -150,9 +150,9 @@ function atualizarRanking(nome, premio) {
     salvarRanking(rankingFinal);
 }
 
-/**
- * Exibe o ranking dos melhores jogadores.
- */
+
+ //* Exibe o ranking dos melhores jogadores.
+
 function exibirRanking() {
     console.log("\n- 🏆 RANKING DOS MELHORES JOGADORES 🏆 -");
     const ranking = lerRanking();
@@ -182,7 +182,7 @@ function iniciarJogo() {
     let premioFinal = 0;
     let rodadaAtual = 0;
     let continuarJogando = true;
-    let ajudas = { pular: 1, cartas: 1 }; // Bônus: Ajudas
+    let ajudas = { pular: 1, cartas: 1 };
 
     for (let i = 0; i < perguntasSelecionadas.length; i++) {
         rodadaAtual = i + 1;
@@ -340,7 +340,7 @@ function jogarNovamente() {
     }
 }
 
-// -PONTO DE ENTRADA DO PROGRAMA-
+// Ponto de entrada do programa
 function main() {
     exibirRanking();
     iniciarJogo();
